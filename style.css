@@ -1,0 +1,261 @@
+body {
+
+    background-color: #71c9ce;
+    height: 100vh;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 20px;
+
+}
+
+body>header>div {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.btn1 {
+    grid-column-start: 13;
+    grid-column-end: 14;
+
+}
+
+.btn {
+    margin-left: -35px;
+    border-radius: 38vh;
+    margin-top: 4.4vh;
+    height: 7vh;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 3vh;
+    border: none;
+    font-weight: bolder;
+    color: #71C9CE;
+    border-bottom: solid 3px rgba(0, 0, 0, 0.562);
+    cursor: pointer;
+    width: 20vh;
+}
+
+.logo {
+    font-size: 3vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    color: #E3FDFD;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 20px;
+    height: 100vh;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: 5vh;
+    font-family: "Outfit", sans-serif;
+    grid-column-start: 2;
+    grid-column-end: 15;
+    color: #E3FDFD;
+    margin-left: -10px;
+
+}
+
+.subheading {
+    color: #E3FDFD;
+    font-size: 3vh;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+    margin-left: 3px;
+    margin-top: -60px;
+}
+
+.section2 {
+    grid-area: 2 / 2 / 2 / 14;
+}
+
+.white-line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.356);
+    margin-left: -8px;
+}
+
+.project {
+    color: #E3FDFD;
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    margin-left: -9px;
+}
+
+
+
+.dog {
+
+    grid-column: 2 / 8;
+
+}
+
+.image1 {
+    height: 80%;
+    width: 100%;
+}
+
+.gamer {
+    grid-column: 8 /14
+}
+
+.image2 {
+    height: 80%;
+    width: 100%;
+}
+
+.yt1 {
+
+    grid-column: 2 / 8;
+    grid-row: 4 / 5;
+
+}
+
+.image3 {
+    height: 80%;
+    width: 100%;
+}
+
+.yt2 {
+    grid-column: 8 /14
+}
+
+.image4 {
+    height: 80%;
+    width: 100%;
+}
+
+.imgtitle {
+    color: #E3FDFD;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    font-size: 3vh;
+    font-family: "outfit", sans-serif;
+    margin-top: 0;
+}
+
+.social1 {
+
+    grid-area: 5 / 5 / 5 / 6;
+}
+
+.twitter {
+    height: 9vh;
+    width: 9vh;
+    margin-left: 0vh;
+}
+
+.social2 {
+    grid-area: 5 / 8 / 5 / 8;
+}
+
+.ig {
+    height: 10vh;
+    width: 10vh;
+    margin-left: -6.3vh;
+}
+
+.social3 {
+    grid-area: 5 / 10 / 5 / 10;
+}
+
+.github {
+    margin-top: 0.9vh;
+    height: 8.2vh;
+    width: 9vh;
+}
+
+.subheading2 {
+
+    text-align: center;
+    color: #E3FDFD;
+    grid-area: 6 / 3 / 6 / 13;
+    font-size: 5.49vh;
+    font-family: "outfit", sans-serif;
+    font-weight: 400;
+
+}
+
+.getintouch {
+    grid-area: 7 / 2 / 7 / 14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2 {
+    color: #71C9CE;
+    border-radius: 4vh;
+    border: none;
+    font-size: 3vh;
+    font-weight: bolder;
+    height: 7vh;
+    width: 28vh;
+    cursor: pointer;
+    margin-bottom: 10vh;
+}
+
+@media (max-width:768px) {
+
+    .heading {
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    .btn {
+        margin-left: 45px;
+        border-radius: 4vh;
+        font-size: 2.3vh;
+        width: 14vh;
+    }
+
+    .logo {
+        font-size: 2.5vh;
+        margin-top: 1.5vh;
+    }
+
+    .subheading {
+        font-size: 2vh;
+        font-weight: 400;
+    }
+
+    body>main>div>div>p>br {
+        display: none;
+    }
+
+    .twitter {
+        height: 8vh;
+        width: 8vh;
+        margin-top: 0.94vh;
+        margin-right: 0.7vh;
+    }
+
+    .ig {
+        height: 9vh;
+        width: 9vh;
+        margin-left: -5.2vh;
+        margin-top: 0.5vh;
+    }
+
+    .github {
+        margin-top: 1vh;
+        height: 7.8vh;
+        width: 8.2vh;
+        margin-left: -2.5vh;
+    }
+}
